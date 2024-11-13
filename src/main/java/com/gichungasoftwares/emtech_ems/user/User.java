@@ -14,6 +14,7 @@ import java.security.Principal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -39,8 +40,14 @@ public class User implements UserDetails, Principal {
     private LocalDate dateOfBirth;
     private String phoneNumber;
     private String password;
+    private String city;
+    private String address;
+    private String country;
     private String position;
     private String department;
+    private String status;
+    private Date joinDate;
+    private Date lastLoginDate;
     private boolean isAccountLocked;
     private boolean isEnabled;
 
